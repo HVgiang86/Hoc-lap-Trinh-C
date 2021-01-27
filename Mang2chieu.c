@@ -1,4 +1,4 @@
-//Sắp xếp mảng 2 chiều tăng dần theo hình xoắn ốc//
+//HVG86
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -59,7 +59,7 @@ int Sum(){ //func 4
             sum+=a[i][j];
         }
     }
-
+    return sum;
 }
 void sortUp(){ //func 5
     int hang=m; int cot =n;
@@ -279,9 +279,12 @@ int main(){
     printf("Nhap cac phan tu cua mang: \n");
     for(int i=0; i<m; i++){
         for(int j=0; j<n; j++){
-            scanf("%d",&a[i][j]);
+            a[i][j]=rand()%100;
+            printf("%d\t",a[i][j]);
         }
+        printf("\n");
     }
+    printf("\n");
     printf("Menu: \n");
     printf("1> Tim phan tu lon nhat\n");
     printf("2> Tim phan tu nho nhat\n");
